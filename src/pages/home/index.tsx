@@ -2,8 +2,11 @@ import styles from "./home.module.css";
 
 export function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Home</h1>
-    </div>
+    <main className={styles.container}>
+      <form className={styles.form}>
+        <input placeholder='Enter the currency digit: BTC...' />
+        <button type='submit'></button>
+      </form>
+    </main>
   );
 }
