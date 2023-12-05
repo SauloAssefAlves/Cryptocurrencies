@@ -22,15 +22,19 @@ export function Home() {
         </thead>
 
         <tbody id='tbody'>
-          <tr className={styles.td}>
-            <td className={styles.tdLabel}>
-              <Link to='/detail/btc'>
-                <span className={styles.link}>Bitcoin</span> | BTC
+          <tr className={styles.tr}>
+            <td className={styles.tdLabel} data-label='Coin'>
+              <Link className={styles.link} to='/detail/btc'>
+                <span>Bitcoin</span> | BTC
               </Link>
             </td>
-            <td className={styles.tdLabel}>R$ 1999</td>
-            <td className={styles.tdLabel}>R$ 40.222</td>
-            <td className={styles.tdProfit}>
+            <td className={styles.tdLabel} data-label='Market Value'>
+              R$ 1999
+            </td>
+            <td className={styles.tdLabel} data-label='Price'>
+              R$ 40.222
+            </td>
+            <td className={styles.tdProfit} data-label='Volume'>
               <span>-5.3</span>
             </td>
           </tr>
