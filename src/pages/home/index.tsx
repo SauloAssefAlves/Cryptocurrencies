@@ -28,7 +28,7 @@ export function Home() {
                 <span>Bitcoin</span> | BTC
               </Link>
             </td>
-            <td className={styles.tdLabel} data-label='Market Value'>
+            <td className={styles.tdLabel} data-label='Market'>
               R$ 1999
             </td>
             <td className={styles.tdLabel} data-label='Price'>

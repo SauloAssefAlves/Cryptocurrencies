@@ -103,4 +103,38 @@ table td {
     margin: -1;
     width: 1px;
   }
+  .tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  table td {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.16);
+    display: block;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  td:first-child,
+  th:first-child {
+    border-radius: 0;
+  }
+
+  td:last-child,
+  th:last-child {
+    border-radius: 0;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
